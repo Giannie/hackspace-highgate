@@ -11,3 +11,4 @@ cd /usr/local/lib/node_modules/homebridge/
 sudo npm install --unsafe-perm bignum
 cd /usr/local/lib/node_modules/hap-nodejs/node_modules/mdns
 sudo node-gyp BUILDTYPE=Release rebuild
+sudo npm install -g --unsafe-perm homebridge-cmd
