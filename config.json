@@ -12,8 +12,8 @@
         {
             "accessory": "CMD",
             "name": "Light",
-            "on_cmd": "",
-            "off_cmd": ""
+            "on_cmd": "Put your code here",
+            "off_cmd": "Put your code here"
         }
     ]
 }
