@@ -27,10 +27,12 @@ morse_dict = {
 'z':[3,3,1,1]
 }
 
+SLEEP_TIME = 0.5
+
 for key, value in morse_dict.items():
     s = ''
     for index in range(len(value)):
-        s += "echo 1 > /sys/class/gpio/gpio2/value\nsleep %s\necho 0 > /sys/class/gpio/gpio2/value\n" % str(value[index])
+        s += "echo 1 > /sys/class/gpio/gpio2/value\nsleep %s\necho 0 > /sys/class/gpio/gpio2/value\n" % str(value[index]*SLEEP_TIME)
         if index < len(value)-1:
             s += "sleep 1\n"
         else:
