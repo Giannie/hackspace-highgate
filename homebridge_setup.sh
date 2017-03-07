@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt-get update && sudo apt-get install -y libavahi-compat-libdnssd-dev
+sudo apt-get update && sudo apt-get install -y libavahi-compat-libdnssd-dev apache2 php5 libapache2-mod-php5
 cd /tmp
 wget https://nodejs.org/dist/v4.0.0/node-v4.0.0-linux-armv6l.tar.gz 
 tar -xvf node-v4.0.0-linux-armv6l.tar.gz 
